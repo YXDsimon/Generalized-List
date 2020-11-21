@@ -1,10 +1,15 @@
 #include <iostream>
+#include <queue>
 #define ELEM char
 using namespace std;
-int main(){
-    struct a{
-        int b;
-        a(int curr){b=curr;}
-    } c(2),d(3);
-    
+void foo(int a)
+{
+    cout << a << endl;
+}
+int main()
+{
+    int a = 5;
+    int *i = &a;
+    foo(*i); 
+    return 0;
 }
